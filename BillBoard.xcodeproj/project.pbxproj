@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4641B7C1C878EE800FC0212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4641B7B1C878EE800FC0212 /* AppDelegate.swift */; };
+		C4641B7E1C878EE800FC0212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4641B7D1C878EE800FC0212 /* ViewController.swift */; };
+		C4641B811C878EE800FC0212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4641B7F1C878EE800FC0212 /* Main.storyboard */; };
+		C4641B831C878EE800FC0212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4641B821C878EE800FC0212 /* Assets.xcassets */; };
+		C4641B861C878EE800FC0212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4641B841C878EE800FC0212 /* LaunchScreen.storyboard */; };
+		C4641B911C878EE800FC0212 /* BillBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4641B901C878EE800FC0212 /* BillBoardTests.swift */; };
+		C4641B9C1C8790E000FC0212 /* NotifyUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4641B9B1C8790E000FC0212 /* NotifyUserViewController.swift */; };
+		C4641B9E1C8791A900FC0212 /* KiiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4641B9D1C8791A900FC0212 /* KiiSDK.framework */; };
+		C4641BA01C8791B400FC0212 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4641B9F1C8791B400FC0212 /* Accounts.framework */; };
+		C4641BA21C8791BE00FC0212 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4641BA11C8791BE00FC0212 /* ImageIO.framework */; };
+		C4641BA41C8791C700FC0212 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4641BA31C8791C700FC0212 /* libsqlite3.tbd */; };
+		C4641BA61C8791D100FC0212 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4641BA51C8791D100FC0212 /* MobileCoreServices.framework */; };
+		C4641BA81C8791D900FC0212 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4641BA71C8791D900FC0212 /* Security.framework */; };
+		C4641BAA1C8791E300FC0212 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4641BA91C8791E300FC0212 /* Social.framework */; };
+		C4641BB11C87950800FC0212 /* BillBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4641BB01C87950800FC0212 /* BillBoardViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4641B8D1C878EE800FC0212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4641B701C878EE800FC0212 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4641B771C878EE800FC0212;
+			remoteInfo = BillBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4641B781C878EE800FC0212 /* BillBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4641B7B1C878EE800FC0212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4641B7D1C878EE800FC0212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4641B801C878EE800FC0212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4641B821C878EE800FC0212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4641B851C878EE800FC0212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4641B871C878EE800FC0212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4641B8C1C878EE800FC0212 /* BillBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4641B901C878EE800FC0212 /* BillBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillBoardTests.swift; sourceTree = "<group>"; };
+		C4641B921C878EE800FC0212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4641B9B1C8790E000FC0212 /* NotifyUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyUserViewController.swift; sourceTree = "<group>"; };
+		C4641B9D1C8791A900FC0212 /* KiiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiiSDK.framework; sourceTree = "<group>"; };
+		C4641B9F1C8791B400FC0212 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		C4641BA11C8791BE00FC0212 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C4641BA31C8791C700FC0212 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C4641BA51C8791D100FC0212 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C4641BA71C8791D900FC0212 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C4641BA91C8791E300FC0212 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C4641BAB1C87923800FC0212 /* BillBoard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BillBoard-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		C4641BB01C87950800FC0212 /* BillBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillBoardViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4641B751C878EE800FC0212 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4641BAA1C8791E300FC0212 /* Social.framework in Frameworks */,
+				C4641BA81C8791D900FC0212 /* Security.framework in Frameworks */,
+				C4641BA61C8791D100FC0212 /* MobileCoreServices.framework in Frameworks */,
+				C4641BA41C8791C700FC0212 /* libsqlite3.tbd in Frameworks */,
+				C4641BA21C8791BE00FC0212 /* ImageIO.framework in Frameworks */,
+				C4641BA01C8791B400FC0212 /* Accounts.framework in Frameworks */,
+				C4641B9E1C8791A900FC0212 /* KiiSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4641B891C878EE800FC0212 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4641B6F1C878EE800FC0212 = {
+			isa = PBXGroup;
+			children = (
+				C4641BA91C8791E300FC0212 /* Social.framework */,
+				C4641BA71C8791D900FC0212 /* Security.framework */,
+				C4641BA51C8791D100FC0212 /* MobileCoreServices.framework */,
+				C4641BA31C8791C700FC0212 /* libsqlite3.tbd */,
+				C4641BA11C8791BE00FC0212 /* ImageIO.framework */,
+				C4641B9F1C8791B400FC0212 /* Accounts.framework */,
+				C4641B9D1C8791A900FC0212 /* KiiSDK.framework */,
+				C4641B7A1C878EE800FC0212 /* BillBoard */,
+				C4641B8F1C878EE800FC0212 /* BillBoardTests */,
+				C4641B791C878EE800FC0212 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4641B791C878EE800FC0212 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4641B781C878EE800FC0212 /* BillBoard.app */,
+				C4641B8C1C878EE800FC0212 /* BillBoardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4641B7A1C878EE800FC0212 /* BillBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C4641B7B1C878EE800FC0212 /* AppDelegate.swift */,
+				C4641B7D1C878EE800FC0212 /* ViewController.swift */,
+				C4641B7F1C878EE800FC0212 /* Main.storyboard */,
+				C4641B821C878EE800FC0212 /* Assets.xcassets */,
+				C4641B841C878EE800FC0212 /* LaunchScreen.storyboard */,
+				C4641B871C878EE800FC0212 /* Info.plist */,
+				C4641BAB1C87923800FC0212 /* BillBoard-Bridging-Header.h */,
+				C4641B9B1C8790E000FC0212 /* NotifyUserViewController.swift */,
+				C4641BB01C87950800FC0212 /* BillBoardViewController.swift */,
+			);
+			path = BillBoard;
+			sourceTree = "<group>";
+		};
+		C4641B8F1C878EE800FC0212 /* BillBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4641B901C878EE800FC0212 /* BillBoardTests.swift */,
+				C4641B921C878EE800FC0212 /* Info.plist */,
+			);
+			path = BillBoardTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4641B771C878EE800FC0212 /* BillBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4641B951C878EE800FC0212 /* Build configuration list for PBXNativeTarget "BillBoard" */;
+			buildPhases = (
+				C4641B741C878EE800FC0212 /* Sources */,
+				C4641B751C878EE800FC0212 /* Frameworks */,
+				C4641B761C878EE800FC0212 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BillBoard;
+			productName = BillBoard;
+			productReference = C4641B781C878EE800FC0212 /* BillBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4641B8B1C878EE800FC0212 /* BillBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4641B981C878EE800FC0212 /* Build configuration list for PBXNativeTarget "BillBoardTests" */;
+			buildPhases = (
+				C4641B881C878EE800FC0212 /* Sources */,
+				C4641B891C878EE800FC0212 /* Frameworks */,
+				C4641B8A1C878EE800FC0212 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4641B8E1C878EE800FC0212 /* PBXTargetDependency */,
+			);
+			name = BillBoardTests;
+			productName = BillBoardTests;
+			productReference = C4641B8C1C878EE800FC0212 /* BillBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4641B701C878EE800FC0212 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = MBPi513;
+				TargetAttributes = {
+					C4641B771C878EE800FC0212 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = AL4N8K4CLM;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+					C4641B8B1C878EE800FC0212 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C4641B771C878EE800FC0212;
+					};
+				};
+			};
+			buildConfigurationList = C4641B731C878EE800FC0212 /* Build configuration list for PBXProject "BillBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4641B6F1C878EE800FC0212;
+			productRefGroup = C4641B791C878EE800FC0212 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4641B771C878EE800FC0212 /* BillBoard */,
+				C4641B8B1C878EE800FC0212 /* BillBoardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4641B761C878EE800FC0212 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4641B861C878EE800FC0212 /* LaunchScreen.storyboard in Resources */,
+				C4641B831C878EE800FC0212 /* Assets.xcassets in Resources */,
+				C4641B811C878EE800FC0212 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4641B8A1C878EE800FC0212 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4641B741C878EE800FC0212 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4641B9C1C8790E000FC0212 /* NotifyUserViewController.swift in Sources */,
+				C4641B7E1C878EE800FC0212 /* ViewController.swift in Sources */,
+				C4641BB11C87950800FC0212 /* BillBoardViewController.swift in Sources */,
+				C4641B7C1C878EE800FC0212 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4641B881C878EE800FC0212 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4641B911C878EE800FC0212 /* BillBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4641B8E1C878EE800FC0212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4641B771C878EE800FC0212 /* BillBoard */;
+			targetProxy = C4641B8D1C878EE800FC0212 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4641B7F1C878EE800FC0212 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4641B801C878EE800FC0212 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4641B841C878EE800FC0212 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4641B851C878EE800FC0212 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4641B931C878EE800FC0212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4641B941C878EE800FC0212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4641B961C878EE800FC0212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BillBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kii.BillBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BillBoard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4641B971C878EE800FC0212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BillBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kii.BillBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BillBoard-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		C4641B991C878EE800FC0212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BillBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BillBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillBoard.app/BillBoard";
+			};
+			name = Debug;
+		};
+		C4641B9A1C878EE800FC0212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BillBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BillBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillBoard.app/BillBoard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4641B731C878EE800FC0212 /* Build configuration list for PBXProject "BillBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4641B931C878EE800FC0212 /* Debug */,
+				C4641B941C878EE800FC0212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4641B951C878EE800FC0212 /* Build configuration list for PBXNativeTarget "BillBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4641B961C878EE800FC0212 /* Debug */,
+				C4641B971C878EE800FC0212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4641B981C878EE800FC0212 /* Build configuration list for PBXNativeTarget "BillBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4641B991C878EE800FC0212 /* Debug */,
+				C4641B9A1C878EE800FC0212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4641B701C878EE800FC0212 /* Project object */;
+}

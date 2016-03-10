@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NbC-oQ-6dn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notify User View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="notification" id="BYZ-38-t0r" customClass="NotifyUserViewController" customModule="BillBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="h7s-h6-14a">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MFu-IL-IU3">
+                                <rect key="frame" x="0.0" y="505" width="600" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmk-Re-wvO">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                        <color key="backgroundColor" red="1" green="0.7149421789" blue="0.11923919080000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="gS1-NQ-DWz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Get Notification"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="gS1-NQ-DWz"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="notifyUserButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a6f-s4-M1A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bmk-Re-wvO" secondAttribute="bottom" id="6q8-99-1K8"/>
+                                    <constraint firstItem="bmk-Re-wvO" firstAttribute="leading" secondItem="MFu-IL-IU3" secondAttribute="leading" id="OdC-TS-y9D"/>
+                                    <constraint firstAttribute="height" constant="65" id="bBp-Bx-d4l"/>
+                                    <constraint firstAttribute="trailing" secondItem="bmk-Re-wvO" secondAttribute="trailing" id="hXd-xL-2CD"/>
+                                    <constraint firstItem="bmk-Re-wvO" firstAttribute="top" secondItem="MFu-IL-IU3" secondAttribute="top" id="qho-OC-fI7"/>
+                                    <constraint firstItem="bmk-Re-wvO" firstAttribute="top" secondItem="MFu-IL-IU3" secondAttribute="top" constant="60" id="u7P-Am-UyM"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="u7P-Am-UyM"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ROw-cy-LCm">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YEA-Pu-Npe"/>
+                                    <constraint firstAttribute="height" constant="100" id="f0q-Lb-YqI"/>
+                                </constraints>
+                                <color key="color" red="1" green="0.064007742800000003" blue="0.64653877609999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="h7s-h6-14a" secondAttribute="trailing" id="9CI-OV-v96"/>
+                            <constraint firstItem="MFu-IL-IU3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FEe-NF-oNE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MFu-IL-IU3" secondAttribute="bottom" constant="30" id="U4p-mY-Gxa"/>
+                            <constraint firstItem="ROw-cy-LCm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kdF-JP-NUL"/>
+                            <constraint firstAttribute="trailing" secondItem="MFu-IL-IU3" secondAttribute="trailing" id="s7Y-ic-ARM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h7s-h6-14a" secondAttribute="bottom" id="tCm-GC-jmC"/>
+                            <constraint firstItem="h7s-h6-14a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uac-yL-TX3"/>
+                            <constraint firstItem="h7s-h6-14a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wZr-nC-z3T"/>
+                            <constraint firstItem="ROw-cy-LCm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y6L-wk-pMO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIdentify" destination="ROw-cy-LCm" id="YTO-sX-QEK"/>
+                        <outlet property="getNotificationButton" destination="bmk-Re-wvO" id="y8Y-NC-Fp6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549" y="313"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dv5-Zw-Eva">
+            <objects>
+                <viewController id="8g4-O1-oGw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2bz-QA-LJR"/>
+                        <viewControllerLayoutGuide type="bottom" id="FvU-PN-D5f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TBM-zW-lcv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="PJR-05-22G">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PJR-05-22G" firstAttribute="top" secondItem="TBM-zW-lcv" secondAttribute="top" id="MYT-Kt-L8q"/>
+                            <constraint firstItem="PJR-05-22G" firstAttribute="leading" secondItem="TBM-zW-lcv" secondAttribute="leading" id="PIo-uL-ovs"/>
+                            <constraint firstItem="FvU-PN-D5f" firstAttribute="top" secondItem="PJR-05-22G" secondAttribute="bottom" id="RVZ-jc-24l"/>
+                            <constraint firstAttribute="trailing" secondItem="PJR-05-22G" secondAttribute="trailing" id="YX8-kJ-0jo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FxY-cd-hrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157" y="322"/>
+        </scene>
+        <!--Bill Board View Controller-->
+        <scene sceneID="nFL-Pc-j5C">
+            <objects>
+                <viewController storyboardIdentifier="billBoard" id="NbC-oQ-6dn" customClass="BillBoardViewController" customModule="BillBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dkx-pB-FkZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z3p-aG-Ry3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZqV-BH-w4E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Message sent to billboard" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gEb-SG-6Dd">
+                                <rect key="frame" x="0.0" y="270" width="600" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99372996790000001" green="0.99372996790000001" blue="0.99372996790000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gEb-SG-6Dd" secondAttribute="trailing" id="2Oc-mp-eN5"/>
+                            <constraint firstItem="gEb-SG-6Dd" firstAttribute="leading" secondItem="ZqV-BH-w4E" secondAttribute="leadingMargin" id="NQu-Uo-Jgu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gEb-SG-6Dd" secondAttribute="trailing" id="SSf-Oh-CuU"/>
+                            <constraint firstItem="gEb-SG-6Dd" firstAttribute="leading" secondItem="ZqV-BH-w4E" secondAttribute="leading" id="Yeo-Us-qBx"/>
+                            <constraint firstItem="gEb-SG-6Dd" firstAttribute="centerX" secondItem="ZqV-BH-w4E" secondAttribute="centerX" id="kCi-01-pbb"/>
+                            <constraint firstItem="gEb-SG-6Dd" firstAttribute="centerY" secondItem="ZqV-BH-w4E" secondAttribute="centerY" id="yXO-t1-0TV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NQu-Uo-Jgu"/>
+                                <exclude reference="SSf-Oh-CuU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="50A-UK-YXX">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="yjz-1n-ihw"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="notificationLabel" destination="gEb-SG-6Dd" id="tTc-3x-MOz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q60-f4-7ts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1315" y="313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_img" width="320" height="480"/>
+    </resources>
+</document>
